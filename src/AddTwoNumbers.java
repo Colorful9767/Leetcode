@@ -22,11 +22,33 @@ import Node.ListNode;
 public class AddTwoNumbers {
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
-        return null;
+        ListNode fakeHead = new ListNode(-1);
+        ListNode current = fakeHead;
+        int carry = 0;
+        while( l1 != null || l2 != null ) {
+            int val = l1 == null ? 0 : l1.val;
+            val += l2 == null ? 0 : l2.val;
+            val += carry;
+            carry = val / 10;
+            val %= 10;
+            current.next = new ListNode(val);
+            current = current.next;
+            l1 = l1 == null ? null : l1.next;
+            l2 = l2 == null ? null : l2.next;
+        }
+        if( carry == 1 ){
+            current.next = new ListNode(carry);
+        }
+        return fakeHead.next;
     }
 
     public static void main(String[] args) {
+        ListNode l1 = new ListNode(2,new ListNode(4,new ListNode(3)));
+        ListNode l2 = new ListNode(5,new ListNode(6,new ListNode(4)));
+        ListNode l3 = addTwoNumbers(l1,l2);
 
+        System.out.println(l1);
+        System.out.println(l2);
+        System.out.println(l3);
     }
 }

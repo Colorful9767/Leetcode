@@ -5,11 +5,16 @@ package Node;
  * @Desc Aefinition for singly-linked list
  */
 public class ListNode {
-    Integer val;
-    ListNode next;
+    public Integer val;
+    public ListNode next;
 
     public ListNode(int val) {
         this.val = val;
+    }
+
+    public ListNode(Integer val, ListNode next) {
+        this.val = val;
+        this.next = next;
     }
 
     @Override
