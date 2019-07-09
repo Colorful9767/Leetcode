@@ -1,5 +1,7 @@
 /**
  *
+ * Created by perl on 2019/7/8.
+ *
  * Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
  *
  * Example 1:
@@ -20,7 +22,6 @@
  * Follow up:
  * Coud you solve it without converting the integer to a string?
  *
- * Created by perl on 2019/7/8.
  */
 public class PalindromeNumber {
 
