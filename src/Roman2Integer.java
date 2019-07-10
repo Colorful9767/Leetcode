@@ -65,7 +65,7 @@ public class Roman2Integer {
         }
 
         int res = 0;
-        Map<Character,Integer> ROMAN_NUMBER_MAP = new HashMap<>();
+        Map<Character,Integer> ROMAN_NUMBER_MAP = new HashMap<>(7);
         ROMAN_NUMBER_MAP.put('I',1);
         ROMAN_NUMBER_MAP.put('V',5);
         ROMAN_NUMBER_MAP.put('X',10);
