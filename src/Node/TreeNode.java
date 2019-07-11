@@ -3,12 +3,12 @@ package Node;
 /**
  * Created by perl on 2019/7/10.
  */
-public class TreeNode<T> {
-      T val;
-      TreeNode left;
-      TreeNode right;
+public class TreeNode {
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
 
-    public TreeNode(T val) {
+    public TreeNode(int val) {
         this.val = val;
     }
 
