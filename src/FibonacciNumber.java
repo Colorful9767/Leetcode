@@ -39,7 +39,6 @@ public class FibonacciNumber {
             return N;
         }
         return fib(N - 2) + fib(N - 1);
-
     }
 
     public static void main(String[] args) {
