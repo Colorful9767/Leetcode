@@ -28,13 +28,13 @@ public class ToLowerCase {
         }
         char[] chars = new char[str.length()];
         for (int i = 0;i < str.length();i++) {
-            chars[i] = Char2LowerCase(str.charAt(i));
+            chars[i] = upper2LowerCase(str.charAt(i));
         }
 
         return String.valueOf(chars);
     }
 
-    private static char Char2LowerCase(char c) {
+    private static char upper2LowerCase(char c) {
         return c >= 'A' && c <= 'Z' ? (char) (c + 32) : c;
     }
 
